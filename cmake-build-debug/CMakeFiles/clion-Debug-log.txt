@@ -1,0 +1,43 @@
+/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/Applications/CLion.app/Contents/bin/ninja/mac/aarch64/ninja -G Ninja -S "/Users/qiangliu/Desktop/QIANG/CLi o n/CC++/MPSU-maingithub" -B "/Users/qiangliu/Desktop/QIANG/CLi o n/CC++/MPSU-maingithub/cmake-build-debug"
+-- The CXX compiler identification is AppleClang 15.0.0.15000309
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /Library/Developer/CommandLineTools/usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found OpenSSL: /opt/homebrew/Cellar/openssl@3/3.4.0/lib/libcrypto.dylib (found version "3.4.0")
+-- Found Boost: /opt/homebrew/lib/cmake/Boost-1.86.0/BoostConfig.cmake (found version "1.86.0") found components: system thread
+cryptoToolsConfig.cmake: /usr/local/lib/cmake/cryptoTools
+-- Relic_LIB:  /usr/local/lib/librelic_s.a
+-- Relic_inc:  /usr/local/include
+
+-- SODIUM_INCLUDE_DIRS:  /usr/local/include
+-- SODIUM_LIBRARIES:  /usr/local/lib/libsodium.a
+-- SODIUM_MONTGOMERY:  ON
+
+coprotoConfig.cmake: /usr/local/lib/cmake/coproto/coprotoConfig.cmake
+find_package(macoro REQUIRED COMPONENTS cpp_20;no_pic;no_asan;Release) @ /usr/local/lib/cmake/coproto/coprotoFindDeps.cmake
+macoroConfig.cmake: /usr/local/lib/cmake/macoro/macoroConfig.cmake
+-- Found Threads: TRUE
+-- Found Boost: /opt/homebrew/lib/cmake/Boost-1.86.0/BoostConfig.cmake (found suitable version "1.86.0", minimum required is "1.84.0") found components: system thread regex
+
+
+Boost_LIB: Boost::system;Boost::thread;Boost::regex
+Boost_INC: /opt/homebrew/include
+
+
+-- LIBDIVIDE_INCLUDE_DIRS:  /opt/homebrew/include
+libOTeConfig.cmake: /usr/local/lib/cmake/libOTe
+cryptoToolsConfig.cmake: /usr/local/lib/cmake/cryptoTools
+-- Found GMP: /opt/homebrew/lib/libgmp.dylib
+-- Found GMPXX: /opt/homebrew/lib/libgmpxx.dylib
+-- Found RELIC: /usr/local/include
+CMake Error at /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/FindPackageHandleStandardArgs.cmake:230 (message):
+  Could NOT find OpenMP_CXX (missing: OpenMP_CXX_FLAGS OpenMP_CXX_LIB_NAMES)
+Call Stack (most recent call first):
+  /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/FindPackageHandleStandardArgs.cmake:600 (_FPHSA_FAILURE_MESSAGE)
+  /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/FindOpenMP.cmake:581 (find_package_handle_standard_args)
+  CMakeLists.txt:15 (find_package)
+
+
+-- Configuring incomplete, errors occurred!
